@@ -87,19 +87,23 @@ body {
     height: 100%;
     width: 100%;
 }
-.flower {
-    opacity: 0;
+
+/* Modificado para que las flores aparezcan al agregar la clase 'show-flowers' */
+.show-flowers .flower {
+    opacity: 1;
     animation: show 4s ease-in-out forwards;
 }
-.flower--1 {
+
+.show-flowers .flower--1 {
     animation-delay: 4s;
 }
-.flower--2 {
+.show-flowers .flower--2 {
     animation-delay: 6s;
 }
-.flower--3 {
+.show-flowers .flower--3 {
     animation-delay: 8s;
 }
+
 .flower__line {
     width: 100%;
     height: 100%;
@@ -108,6 +112,7 @@ body {
 .flower__line__leaf {
     animation: show 2s 4s ease-in-out forwards;
 }
+
 .flower__leafs {
     animation: blossom 4s 4s ease-in-out forwards;
 }
@@ -117,6 +122,8 @@ body {
 .flower__light {
     animation: flash 4s 4s ease-in-out forwards;
 }
+
+/* El mensaje final se mostrará cuando se le agregue la clase 'active' */
 .final-message {
     position: absolute;
     top: 50%;
@@ -125,19 +132,21 @@ body {
     font-size: 1.5em;
     text-align: center;
     opacity: 0;
-    animation: fade-in 3s ease-in-out forwards;
-    animation-delay: 10s;
     line-height: 1.6;
     z-index: 20;
     white-space: pre-line;
     max-width: 90%;
     font-family: 'Courier Prime', monospace;
 }
+
+/* Nuevos estilos para el mensaje final amarillo */
 .final-message.active {
+    opacity: 1;
     color: yellow;
     text-shadow: 0 0 20px yellow, 0 0 40px yellow;
     animation: text-pulse 1s infinite alternate;
 }
+
 @keyframes fade-in {
     to { opacity: 1; }
 }
