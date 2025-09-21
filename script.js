@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // Agrega la clase para que las flores se muestren
             flowers.classList.add("show-flowers");
 
-            // Agrega la clase 'active' al mensaje final después del tiempo que tarda la animación de las flores
+            // Agrega el contenido y la clase 'active' al mensaje final después del tiempo que tarda la animación de las flores
             setTimeout(function() {
+                finalMessage.textContent = "No podía dejar pasar este día sin enviarte estas flores amarillas. Te quiero ❤️";
                 finalMessage.classList.add("active");
             }, 10000); // 10 segundos, que es el tiempo para que todas las flores aparezcan
 
