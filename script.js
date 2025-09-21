@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
             introScreen.style.display = "none";
             mainContent.style.display = "block";
             
-            // Agrega la clase para que las flores se muestren
+            // ¡Aquí se agrega la clase que activa la animación de las flores!
             flowers.classList.add("show-flowers");
 
-            // Agrega el contenido y la clase 'active' al mensaje final después del tiempo que tarda la animación de las flores
+            // Después de 10 segundos, se muestra el mensaje final
             setTimeout(function() {
                 finalMessage.textContent = "No podía dejar pasar este día sin enviarte estas flores amarillas. Te quiero ❤️";
                 finalMessage.classList.add("active");
-            }, 10000); // 10 segundos, que es el tiempo para que todas las flores aparezcan
+            }, 10000); 
 
         }, 1000);
 
